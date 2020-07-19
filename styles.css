@@ -117,7 +117,7 @@ body {
   }
 }
 */
-
+/*
 body {
   margin: 0;
   position: relative;
@@ -183,7 +183,9 @@ button {
   border-radius: 11px;
 }
 
-/*// POP-UP ANIMATION STYLES //*/
+/*/
+/* / POP-UP ANIMATION STYLES * */
+/*
 #pop-up {
   top: -400px;
   animation: drop 0.5s ease forwards, swing 2s 3s ease forwards;
@@ -218,8 +220,8 @@ button {
     transform: translateY(650px) rotateZ(75deg);
   }
 }
-/*// BASKET BASE STYLES //*/
-
+/*/
+/*
 header {
   padding: 10px 20px;
   border-bottom: 1px solid #eee;
@@ -254,8 +256,6 @@ header:after {
   float: left;
 }
 
-/*// BASKET ANIMATION STYLES //*/
-
 .zoom {
   position: absolute;
   top: 40px;
@@ -273,5 +273,75 @@ header:after {
   100% {
     opacity: 0;
     right: 40px;
+  }
+}
+*/
+body {
+  background: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+h1 {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 48px;
+}
+
+.panels {
+  list-style-type: none;
+  padding: 0;
+}
+
+.panels li {
+  position: relative;
+  width: 25%;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+}
+
+.panels li div {
+  width: 100%;
+  padding: 50% 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+/*// ANIMATION STYLES //*/
+.panels {
+  border-radius: 10px;
+}
+.panels div.back {
+  transform: rotateY(90deg);
+}
+
+.panels div.front {
+  position: absolute;
+}
+.panels li:hover div.front {
+  animation: twirl 0.2s ease-in forwards;
+}
+.panels li:hover div.back {
+  animation: twirl 0.2s 0.2s ease-in forwards reverse;
+}
+@keyframes twirl {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(90deg);
   }
 }
