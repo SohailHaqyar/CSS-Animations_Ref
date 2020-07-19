@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  background: lightblue;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  padding: 80px;
+  background: red;
+  color: white;
+  font-family: arial;
+  border-radius: 50%;
+  transition: background 1s, transform 1s ease-in;
+}
+.circle:hover {
+  background: salmon;
+  transform: rotate(360deg);
+}
