@@ -55,15 +55,27 @@ body {
   position: absolute;
   top: 45%;
 }
-.road img {
+.mario {
   position: absolute;
-  width: 200px;
+  width: 120px;
   top: -40px;
   left: 0;
   animation-name: drive;
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
+}
+
+.luigi {
+  position: absolute;
+  top: 155px;
+  width: 120px;
+  left: 0;
+  animation-name: drive;
+  animation-duration: 1.4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
 }
 /* Keyframes */
 
