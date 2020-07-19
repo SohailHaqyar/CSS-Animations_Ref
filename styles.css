@@ -188,7 +188,6 @@ button {
   top: -400px;
   animation: drop 0.5s ease forwards, swing 2s 3s ease forwards;
   transform-origin: 10px 10px;
-  
 }
 
 @keyframes drop {
@@ -256,3 +255,23 @@ header:after {
 }
 
 /*// BASKET ANIMATION STYLES //*/
+
+.zoom {
+  position: absolute;
+  top: 40px;
+  right: 50%;
+  width: 40px;
+  animation: zoom 1s ease forwards;
+}
+@keyframes zoom {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 40px;
+  }
+}
