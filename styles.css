@@ -61,15 +61,17 @@ body {
   top: -40px;
   left: 0;
   animation-name: drive;
-  animation-duration: 3s;
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
 }
 /* Keyframes */
 
 @keyframes drive {
   from {
-    transform: translateX(0);
+    transform: translateX(-200px);
   }
   to {
-    transform: translateX(2500px);
+    transform: translateX(1200px);
   }
 }
